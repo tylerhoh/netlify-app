@@ -1,0 +1,29 @@
+.gallery{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 20px 40px 80px 40px;
+    vertical-align: middle;
+    align-self: center;
+    display: flex;
+    position: relative;
+}
+.reading-subtitle{
+    color: black;
+    font-size: 42px;
+    line-height: 1.3em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+.thumbnail{
+    border: 5px solid #FFFCF9;
+    max-width: 140px;
+}

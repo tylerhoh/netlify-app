@@ -1,0 +1,65 @@
+.App{
+  display:grid;
+  
+}
+.App-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: left;
+  font-style:normal;
+  font-size: calc(60px);
+  color: black;
+}
+.bio{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+#mainNav{
+   color: black;
+}
+#mainNav ul{
+  padding: 0;
+  margin:0;
+  list-style:none;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+#mainNav li{
+  display: flex;
+  padding:6% 6%;
+  border-radius: 100%;        
+  border-style: solid;
+  display:inline-block;
+}
+#jumbo{
+  background-position:center center;
+  min-height: 300px;
+  text-align: center;
+}
+#jumbo h1{
+  color:black;
+  font: size 45px;
+  padding-top: 20px;
+  line-height: 1.6em;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

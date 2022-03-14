@@ -1,0 +1,29 @@
+#mainNav{
+    color: black;
+ }
+ #mainNav ul{
+   padding: 0;
+   margin:0;
+   list-style:none;
+   display: flex;
+   justify-content: center;
+   justify-content: space-evenly;
+ }
+ #mainNav li{
+   display: flex;
+   padding:6% 6%;
+   border-radius: 100%;        
+   border-style: solid;
+   display:inline-block;
+ }
+ #jumbo{
+   background-position:center center;
+   min-height: 300px;
+   text-align: center;
+ }
+ #jumbo h1{
+   color:black;
+   font: size 45px;
+   padding-top: 20px;
+   line-height: 1.6em;
+ }
