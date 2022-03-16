@@ -2,6 +2,13 @@ import '../css/Linkbar.css'
 const Linkbar=()=>{
     return(      
     <nav id="mainNav">
+     <hr  style={{
+    color: '#000000',
+    backgroundColor: '#000000',
+    height: .01,
+    width: .01,
+    borderColor : '#000000'
+}}/>   
     <div className= "container">
       <ul> 
         <li>
@@ -29,6 +36,12 @@ const Linkbar=()=>{
         </li>
       </ul>
     </div>
+    <hr  style={{
+    color: '#000000',
+    backgroundColor: '#000000',
+    height: .01,
+    borderColor : '#000000'
+}}/>
   </nav>
   )
 }
