@@ -6,7 +6,7 @@ import Linkbar from "../components/Linkbar";
 const Home=()=>{
     return(
     <div className="App">
-      <p className="bio">Hi there, I'm Tyler! I am a Software Engineer, musician, and trail biker. Born, raised, and living in San Francisco</p>
+      <p className="bio">Hi there, I'm Tyler! I am a Software Engineer, musician, and mountain biker. Born, raised, and living in San Francisco</p>
 
       <Linkbar></Linkbar>
       
