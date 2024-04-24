@@ -1,7 +1,7 @@
 import "../css/Home.css"
 import React from 'react';
 import Linkbar from "../components/Linkbar";
-import Typewriter from "../components/typewriter";
+import Typewriter from "../components/Typewriter";
 
 const Home=()=>{
    const words = ["a Software Engineer",
