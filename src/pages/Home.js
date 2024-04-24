@@ -12,13 +12,10 @@ const Home=()=>{
     return(
     <div className="App">
       <h1>Hi there, I'm Tyler!</h1>
-      <Typewriter words = {words}></Typewriter>
       <p className="bio"> I am:
        </p>
-       <Typewriter></Typewriter>
-
+       <Typewriter words = {words}></Typewriter>
       <Linkbar></Linkbar>
-      
     </div>
   )
 }
