@@ -14,8 +14,12 @@ const Home=()=>{
       <h1>Hi there, I'm Tyler!</h1>
       <p className="bio"> I am:
        </p>
-       <Typewriter words = {words}></Typewriter>
-      <Linkbar></Linkbar>
+       <div>       
+        <Typewriter words = {words}></Typewriter>
+      </div>
+      <div>
+        <Linkbar></Linkbar>
+      </div>
     </div>
   )
 }
