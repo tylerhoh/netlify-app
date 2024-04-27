@@ -4,31 +4,45 @@ const Typewriter = ({ words }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentSubstrIndex, setCurrentSubstrIndex] = useState(0);
   const [displayedWord, setDisplayedWord] = useState('');
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
     const typingInterval = 100; // Adjust as needed for typing speed
-
+    const deleteInterval = 50; // Adjust as needed for delete speed
+    const word = words[currentWordIndex];
+  
     const timeout = setTimeout(() => {
-      if (currentSubstrIndex < words[currentWordIndex].length) {
+      if (!deleting && currentSubstrIndex < word.length) {
         // Type out the word character by character
-        setDisplayedWord(words[currentWordIndex].substring(0, currentSubstrIndex + 1));
+        setDisplayedWord(word.substring(0, currentSubstrIndex + 1));
         setCurrentSubstrIndex(currentSubstrIndex + 1);
-      } else {
-        // Word fully typed, reset and move to the next word
+      } else if (!deleting && currentSubstrIndex === word.length) {
+        // Start deleting the word after a delay
         setTimeout(() => {
-          setCurrentSubstrIndex(0);
-          setCurrentWordIndex((currentWordIndex + 1) % words.length);
-          setDisplayedWord('');
-        }, 1000); // Delay before next word (adjust as needed)
+          setDeleting(true);
+        }, 6000); // 6 seconds delay
+      } else if (deleting && currentSubstrIndex >= 0) {
+        // Delete the word character by character
+        setDisplayedWord(word.substring(0, currentSubstrIndex));
+        setCurrentSubstrIndex(currentSubstrIndex - 1);
+      } else {
+        // Word fully deleted, move to the next word
+        setDeleting(false);
+        setCurrentSubstrIndex(0);
+        setCurrentWordIndex((currentWordIndex + 1) % words.length);
+        setDisplayedWord('');
       }
-    }, typingInterval);
-
+    }, deleting ? deleteInterval : typingInterval);
+  
     return () => clearTimeout(timeout);
-  }, [currentSubstrIndex, currentWordIndex, words]);
+  }, [currentSubstrIndex, currentWordIndex, deleting, words]);
+  
+  // Blinking caret
+  const caret = deleting ? '' : '|';
 
   return (
     <div>
-      <p>{displayedWord}</p>
+      <p>{displayedWord}{caret}</p>
     </div>
   );
 };

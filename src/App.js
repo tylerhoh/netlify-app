@@ -4,6 +4,7 @@ import "./css/App.css"
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import Linkbar from './components/Linkbar';
 
 function App(){
   const TITLE = 'Tyler Hoh';
@@ -12,9 +13,8 @@ function App(){
     <Router>
             <title>{TITLE}</title>
     <div className="App">
-
+    <Linkbar></Linkbar>
     <Link className='photo-Link' to="/"><img alt='' id="hero"></img></Link>
-      <Navbar></Navbar>
       <div className="content">
         <Routes>
           <Route exact path="/" element={<Home/>}>

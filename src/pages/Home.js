@@ -1,24 +1,23 @@
-import "../css/Home.css"
 import React from 'react';
+import "../css/Home.css"
 import Linkbar from "../components/Linkbar";
 import Typewriter from "../components/Typewriter";
 
 const Home=()=>{
-   const words = ["a Software Engineer",
-   "a musician",
-   "a mountain biker",
-   "a jiu jitsu athlete",
-   "born, raised, and living in San Francisco"]
+   const words = ["software engineer",
+   "singer/songwriter",
+   "mushroom forager",
+   "mountain biker",
+   "jiu jitsu athlete"]
     return(
-    <div className="App">
-      <h1>Hi there, I'm Tyler!</h1>
-      <p className="bio"> I am:
-       </p>
-       <div>       
-        <Typewriter words = {words}></Typewriter>
+    <div>
+    <div>
       </div>
-      <div>
-        <Linkbar></Linkbar>
+      <h1 className="bio">Hi there, I'm Tyler!</h1>
+      <h3 className = "bio"> I am a:
+       </h3>
+       <div className="bio">       
+        <Typewriter words = {words}></Typewriter>
       </div>
     </div>
   )
