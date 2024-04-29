@@ -1,6 +1,5 @@
 import React from 'react';
 import "../css/Home.css"
-import Linkbar from "../components/Linkbar";
 import Typewriter from "../components/Typewriter";
 
 const Home=()=>{
