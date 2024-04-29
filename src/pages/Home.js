@@ -13,7 +13,7 @@ const Home=()=>{
     <div>
     <div>
       </div>
-      <h1 className="bio">Hi there, I'm Tyler!</h1>
+      <h1 className="bio">Hi there, I'm <span>Tyler</span></h1>
       <h3 className = "bio"> I am a:
        </h3>
        <div className="bio">       
@@ -22,5 +22,4 @@ const Home=()=>{
     </div>
   )
 }
-
 export default Home;
