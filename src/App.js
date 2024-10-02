@@ -18,6 +18,7 @@ function App(){
         <Routes>
           <Route exact path="/" element={<Home/>}>
           </Route>
+          <Route exact path="/" element> </Route>
         </Routes>
       </div>
     </div>
