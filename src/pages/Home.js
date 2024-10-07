@@ -6,6 +6,7 @@ const Home=()=>{
    const words = ["software engineer",
    "mushroom forager",
    "mountain biker",
+   "language learner",
    "jiu jitsu athlete"]
     return(
     <div>
@@ -17,12 +18,10 @@ const Home=()=>{
        <div className="bio">       
         <Typewriter words = {words}><br></br></Typewriter>
       </div>
-      <h2>About me</h2>
-      <h3 className="bio">Fintech, Stocks, IoT
+      <h2></h2>
+      <h3 className="bio">
       <br></br>
-      I like to make cool web apps using the latest web dev technologies. <br></br>
-      I'm always testing out new frameworks and tools.<br></br>
-      This website was built using React and CSS; deployed on Netlify. 
+       <br></br>
       </h3>
     </div>
   )
