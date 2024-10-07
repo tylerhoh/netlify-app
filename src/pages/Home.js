@@ -18,7 +18,6 @@ const Home=()=>{
        <div className="bio">       
         <Typewriter words = {words}><br></br></Typewriter>
       </div>
-      <h2></h2>
       <h3 className="bio">
       <br></br>
        <br></br>
